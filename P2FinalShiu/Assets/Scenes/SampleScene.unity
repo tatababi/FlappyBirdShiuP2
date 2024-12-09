@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 245985108}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 2.38, z: 0}
+  m_LocalPosition: {x: -0.02, y: 2.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -310,6 +310,8 @@ GameObject:
   - component: {fileID: 570854287}
   - component: {fileID: 570854286}
   - component: {fileID: 570854285}
+  - component: {fileID: 570854289}
+  - component: {fileID: 570854290}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -445,7 +447,7 @@ SpriteRenderer:
   m_SortingLayerID: 1412177425
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1269942479, guid: 51f7519a197a72b48bb5b87b95a924a0, type: 3}
+  m_Sprite: {fileID: 768542617, guid: 51f7519a197a72b48bb5b87b95a924a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -471,6 +473,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &570854289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570854284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f43967dd1d7474bb672d86f91565f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upForce: 200
+--- !u!95 &570854290
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570854284}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a3f4028f64249746bc78de1db590d4e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2143244308
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +557,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.18}
+  m_Offset: {x: 0, y: -2.67}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -595,8 +631,8 @@ Transform:
   m_GameObject: {fileID: 2143244308}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -2.38, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.3576, y: -2.4806, z: 0}
+  m_LocalScale: {x: 0.98819256, y: 1.0086185, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 245985109}
