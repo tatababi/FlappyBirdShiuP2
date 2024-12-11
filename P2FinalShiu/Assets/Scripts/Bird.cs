@@ -5,9 +5,12 @@ using UnityEngine;
 public class Bird : MonoBehaviour
 {
     public float upForce = 200f;
+
     private bool isDead = false;
     private Rigidbody2D rb2d;
     private Animator anim;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +30,13 @@ public class Bird : MonoBehaviour
                 anim.SetTrigger("Flap");
             }
         }
+    }
         void OnCollisionEnter2D()
         {
             isDead = true;
             anim.SetTrigger("Die");
         }
     }
-}
+
+
 
